@@ -1,0 +1,22 @@
+section.presentation {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  width: 100vw;
+}
+section.presentation img {
+  width: 75vw;
+  height: auto;
+}
+section.presentation h2 {
+  font: "Alata", sans-serif;
+  color: black;
+}
+section.presentation p {
+  font: "Josefin Sans", sans-serif;
+  color: dimgray;
+}
+
+/*# sourceMappingURL=presentation.css.map */

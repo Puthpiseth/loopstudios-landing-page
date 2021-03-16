@@ -1,0 +1,21 @@
+@import "../base/index.scss";
+section.presentation {
+    border: 1px solid $black;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    text-align: center;
+    width: 100vw;
+    img {
+        width: 75vw;
+        height: auto;
+    }
+    h2 {
+        font: $alata;
+        color: $black;
+    }
+    p {
+        font: $josefin-sans;
+        color: $very-dark-gray;
+    }
+}

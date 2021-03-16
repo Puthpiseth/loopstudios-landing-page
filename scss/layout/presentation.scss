@@ -1,21 +1,30 @@
 @import "../base/index.scss";
 section.presentation {
-    border: 1px solid $black;
+    // border: 1px solid $black;
+    background-color: $white;
     display: flex;
     flex-direction: column;
-    background-color: $white;
     text-align: center;
     width: 100vw;
+    align-items: center;
+    // justify-self: center;
+    // align-content: center;
     img {
-        width: 75vw;
+        width: 85vw;
         height: auto;
+        // justify-content: center;
     }
-    h2 {
-        font: $alata;
-        color: $black;
-    }
-    p {
-        font: $josefin-sans;
-        color: $very-dark-gray;
+    div.presentation-text {
+        width: 75vw;
+        h2 {
+            font-family: $alata;
+            font-weight: 400;
+            color: $black;
+        }
+        p {
+            font-family: $josefin-sans;
+            font-weight: 300;
+            color: $very-dark-gray;
+        }
     }
 }

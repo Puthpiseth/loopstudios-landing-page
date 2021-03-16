@@ -10,13 +10,15 @@
   margin: 0 auto;
   padding-left: 128px;
   padding-right: 128px;
-
-  @media (max-width: 1440px) {
+}
+@media (max-width: 1440px) {
+  .container {
     padding-left: 64px;
     padding-right: 64px;
   }
-
-  @media (max-width: 375px) {
+}
+@media (max-width: 375px) {
+  .container {
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -68,16 +70,17 @@
   z-index: 98;
   background-color: violet;
   padding-top: 120px;
-
-  a {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto 16px;
-    text-align: center;
-    margin-bottom: 16px;
-    padding: 12px 16px;
-    background-color: violet;
-    text-decoration: none;
-  }
 }
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 16px;
+  text-align: center;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background-color: violet;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=header.css.map */

@@ -23,6 +23,7 @@ footer {
         margin: 20% 0% 3% 0%;
         &:first-child {
             margin-top: 0%;
+            // transition: 1s;
         }
     }
     p.copyright {
@@ -44,7 +45,7 @@ footer {
         color: $white;
         &:hover {
             text-decoration: underline;
-            text-underline-offset: 0.5em;
+            text-underline-offset: 0.4em;
             text-decoration-thickness: .1em;
         }
     }

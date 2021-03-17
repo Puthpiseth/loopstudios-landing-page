@@ -61,6 +61,7 @@ section.gallery a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 0.2em;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=gallery.css.map */

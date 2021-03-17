@@ -2,10 +2,11 @@
 body {
     margin: 0;
     // background-color: blue;
+    // font: 1em $josefin-sans;
     font: 1em $josefin-sans;
+    // font-weight: 300;
     // font: 1em $alata;
     // h2 {
-    // font-weight: lighter;
     // }
 }
 
@@ -15,7 +16,11 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $josefin-sans;
+    // font-family: $josefin-sans;
     // font-family: $alata;
-    font-weight: 300;
+    // font-weight: 300;
+}
+
+.presentation-and-gallery-container {
+    // @media     
 }

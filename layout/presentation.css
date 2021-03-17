@@ -7,18 +7,16 @@ section.presentation {
   align-items: center;
 }
 section.presentation img {
-  width: 85vw;
+  width: 88vw;
   height: auto;
 }
 section.presentation div.presentation-text {
-  width: 75vw;
+  width: 70vw;
 }
 section.presentation div.presentation-text h2 {
-  font-weight: 400;
   color: black;
 }
 section.presentation div.presentation-text p {
-  font-weight: 300;
   color: dimgray;
 }
 

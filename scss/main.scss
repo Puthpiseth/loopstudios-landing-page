@@ -1,5 +1,10 @@
-@import "../base/index";
+@import "./base/index.scss";
 body {
     margin: 0;
     // background-color: blue;
+    font: 1em $josefin-sans;
+    // font: 1em $alata;
+    // h2 {
+    // font-weight: lighter;
+    // }
 }

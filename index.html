@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="layout/presentation.css">
+    <link rel="stylesheet" href="components/gallery.css">
+    <link rel="stylesheet" href="layout/footer.css">
 
 
     <title>Frontend Mentor | Loopstudios landing page</title>
@@ -70,27 +72,110 @@
             </p>
         </div>
     </section>
-    Our creations See all Deep earth Night arcade Soccer team VR The grid From up above VR Pocket borealis The curiosity Make it fisheye
+    <section class="gallery">
 
 
-    <img class="" src="images/mobile/image-deep-earth.jpg" alt="">
-    <img class="" src="images/mobile/image-night-arcade.jpg" alt="">
-    <img class="" src="images/mobile/image-soccer-team.jpg" alt="">
-    <img class="" src="images/mobile/image-grid.jpg" alt="">
-    <img class="" src="images/mobile/image-from-above.jpg" alt="">
-    <img class="" src="images/mobile/image-pocket-borealis.jpg" alt="">
-    <img class="" src="images/mobile/image-curiosity.jpg" alt="">
-    <img class="" src="images/mobile/image-fisheye.jpg" alt="">
+        <h2>
+            OUR CREATIONS
+        </h2>
 
+
+
+        <!-- <picture>
+            <source media="(min-width: 900px)" srcset="BigImage.png">
+            <source media="(min-width: 480px)" srcset="MediumImage.png">
+            <img src="OtherImage.png" alt="IfItDoesntMatchAnyMedia">
+        </picture> -->
+
+        <figure class="gallery-image">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img src="images/mobile/image-night-arcade.jpg" alt="">
+                    <figcaption>NIGHT<br>ARCADE</figcaption>
+                </picture>
+            </a>
+        </figure>
+        <figure class="gallery-image">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img src="images/mobile/image-soccer-team.jpg" alt="">
+                    <figcaption>SOCCER<br>TEAM VR</figcaption>
+                </picture>
+            </a>
+        </figure>
+        <figure class="gallery-image">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img src="images/mobile/image-grid.jpg" alt="">
+                    <figcaption>THE<br>GRID</figcaption>
+                </picture>
+            </a>
+        </figure>
+        <figure class="gallery-image">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img src="images/mobile/image-from-above.jpg" alt="">
+                    <figcaption>FROM UP<br>ABOVE VR</figcaption>
+                </picture>
+            </a>
+        </figure>
+        <figure class="gallery-image">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img src="images/mobile/image-pocket-borealis.jpg" alt="">
+                    <figcaption>POCKET<br>BOREALIS</figcaption>
+                </picture>
+            </a>
+        </figure>
+        <figure class="gallery-image">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img src="images/mobile/image-curiosity.jpg" alt="">
+                    <figcaption>THE<br>CURIOSITY</figcaption>
+                </picture>
+            </a>
+        </figure>
+        <figure class="gallery-image">
+            <a href="#">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img src="images/mobile/image-fisheye.jpg" alt="">
+                    <figcaption>MAKE IT<br>FISHEYE</figcaption>
+                </picture>
+            </a>
+        </figure>
+
+        <button class="see-all-button">SEE ALL</button>
+
+    </section>
 
     <footer>
-        About Careers Events Products Support © 2021 Loopstudios. All rights reserved.
+        <p class="business-name">loopstudios</p>
+        <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+        </ul>
+        <a class="social-media-icon" href="#"><img src="./images/icon-facebook.svg" alt=""></a>
+        <a class="social-media-icon" href="#"><img src="./images/icon-twitter.svg" alt=""></a>
+        <a class="social-media-icon" href="#"><img src="./images/icon-pinterest.svg" alt=""></a>
+        <a class="social-media-icon" href="#"><img src="./images/icon-instagram.svg" alt=""></a>
+
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
     </footer>
 
 
-    <div class="attribution">
+    <!-- <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
 </body>
 
 </html>

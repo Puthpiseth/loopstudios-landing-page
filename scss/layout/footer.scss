@@ -1,0 +1,25 @@
+@import "../base/index";
+footer {
+    // text-align: center;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    p.business-name {
+        font-weight: bold;
+        font-size: 125%;
+    }
+    ul {
+        list-style: none;
+    }
+    ul li {
+        margin: 0% 0% 3% 0%;
+    }
+    p.copyright {
+        color: $very-dark-gray;
+    }
+    .social-media-icon {
+        margin: 0% 1% 0% 1%;
+    }
+    padding-top: 5%;
+    padding-bottom: 5%;
+}

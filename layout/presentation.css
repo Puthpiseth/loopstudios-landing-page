@@ -14,12 +14,10 @@ section.presentation div.presentation-text {
   width: 75vw;
 }
 section.presentation div.presentation-text h2 {
-  font-family: "Alata", sans-serif;
   font-weight: 400;
   color: black;
 }
 section.presentation div.presentation-text p {
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   color: dimgray;
 }

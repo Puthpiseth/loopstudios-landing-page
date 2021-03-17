@@ -35,5 +35,44 @@ footer .social-media-container {
 footer .social-media-icon {
   margin: 0% 1% 0% 1%;
 }
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-thickness: 0.1em;
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li {
+    margin: 0% 4%;
+  }
+  footer ul li:first-of-type {
+    margin-left: 0;
+  }
+  footer .footer-studio-and-navigation-container-deskop {
+    display: block;
+    text-align: initial;
+    margin-left: 5%;
+  }
+  footer .footer-studio-and-navigation-container-deskop ul {
+    display: flex;
+  }
+  footer .footer-social-media-and-copyright-container-deskop {
+    margin-left: 10%;
+    width: 50%;
+    display: block;
+    margin-right: 5%;
+  }
+  footer .footer-social-media-and-copyright-container-deskop p.copyright {
+    text-align: right;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */

@@ -38,4 +38,62 @@ footer {
     .social-media-icon {
         margin: 0% 1% 0% 1%;
     }
+    a {
+        // waiting for P's code
+        text-decoration: none;
+        color: $white;
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: 0.5em;
+            text-decoration-thickness: .1em;
+        }
+    }
+}
+
+//  DESTKOP 
+@media screen and (min-width: 900px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        // justify-content: initial;
+        // align-items: initial;
+        ul {
+            li {
+                margin: 0% 4%;
+            }
+            li:first-of-type {
+                margin-left: 0;
+                // padding-left: 0;
+            }
+        }
+        // display: flex;
+        // margin: 0% 5%;
+        .footer-studio-and-navigation-container-deskop {
+            // margin-right: 10%;
+            display: block;
+            text-align: initial;
+            margin-left: 5%;
+            // background-color: rgba(255, 255, 240, 0.596);
+            ul {
+                display: flex;
+            }
+        }
+        .footer-social-media-and-copyright-container-deskop {
+            margin-left: 10%;
+            width: 50%;
+            display: block;
+            // background-color: rgba(255, 255, 240, 0.281);
+            margin-right: 5%;
+            .social-media-container {}
+            p.copyright {
+                text-align: right;
+                // text-align: right;
+                // width: 80%;
+                // text-align: initial;
+            }
+        }
+    }
+    // body {
+    // background-color: red;
+    // }
 }

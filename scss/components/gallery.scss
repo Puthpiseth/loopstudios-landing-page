@@ -27,7 +27,7 @@ section.gallery {
         figcaption {
             color: $white;
             font-size: 1.4em;
-            font-weight: 400;
+            // font-weight: 400;
             margin-left: 5%;
             // font: $josefin;
             // margin-top: 0%;
@@ -154,6 +154,11 @@ section.gallery {
         }
     }
     section.gallery {
+        .gallery-image figcaption {
+            margin-top: 47vh;
+            margin-left: 10% !important;
+            // margin-top: 2%;
+        }
         order: 10;
         // position: relative;
         // justify-content: center;
@@ -165,48 +170,46 @@ section.gallery {
         // background-color: red;
         figure.gallery-image {
             // height: 65vh;
+            width: 19vw;
             font-size: 2em;
             // height: auto;
             // margin-left: 1%;
             // margin-right: 1%;
             // width: 20vw;
-            width: 20vw;
-            background-size: contain;
+            // background-size: contain;
+            background-size: cover;
+            // background-size: auto;
             // background-color: blue;
             &.deep-earth {
-                background-image: url(/images/desktop/image-deep-earth.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-deep-earth.jpg);
             }
             &.night-arcade {
-                background-image: url(/images/desktop/image-night-arcade.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-night-arcade.jpg);
             }
             &.soccer-team {
-                background-image: url(/images/desktop/image-soccer-team.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-soccer-team.jpg);
             }
             &.the-grid {
-                background-image: url(/images/desktop/image-grid.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-grid.jpg);
             }
             &.from-up-above {
-                background-image: url(/images/desktop/image-from-above.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-from-above.jpg);
             }
             &.pocket-borealis {
-                background-image: url(/images/desktop/image-pocket-borealis.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-pocket-borealis.jpg);
             }
             &.the-curiosity {
-                background-image: url(/images/desktop/image-curiosity.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-curiosity.jpg);
             }
             &.make-it-fisheye {
-                background-image: url(/images/desktop/image-fisheye.jpg);
+                background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/desktop/image-fisheye.jpg);
             }
         }
         .x-gallery-image-row {
             display: flex;
             flex-direction: row;
-            width: 100vw;
+            // width: 100vw;
             // background-color: brown;
-        }
-        figcaption {
-            margin-top: 47vh;
-            // margin-left: 50%;
         }
     }
 }

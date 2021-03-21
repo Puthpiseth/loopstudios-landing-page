@@ -8,7 +8,7 @@ section.gallery {
 }
 section.gallery figure.gallery-image {
   background: linear-gradient(45deg, red, blue);
-  width: 300px;
+  width: 350px;
   padding: 10% 0;
   height: auto;
   background-repeat: no-repeat;
@@ -52,26 +52,20 @@ section.gallery a {
 }
 
 @media screen and (min-width: 768px) {
-  div.h2-and-button {
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-  }
-  div.h2-and-button.h2 {
-    margin-right: 10%;
-  }
-
   section.gallery {
-    order: 10;
     display: flex;
+    width: 100%;
   }
   section.gallery .gallery-image figcaption {
-    margin-top: 47vh;
-    margin-left: 10% !important;
+    margin-top: 20vh;
+  }
+  section.gallery h2 {
+    margin-right: 60%;
+    font-weight: 300;
   }
   section.gallery figure.gallery-image {
-    width: 19vw;
-    font-size: 2em;
+    width: 15vh;
+    font-size: 0.8em;
     background-size: cover;
   }
   section.gallery figure.gallery-image.deep-earth {
@@ -97,6 +91,19 @@ section.gallery a {
   }
   section.gallery figure.gallery-image.make-it-fisheye {
     background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-fisheye.jpg);
+  }
+  section.gallery .x-gallery-image-row {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.gallery {
+    display: flex;
+    width: 80%;
+  }
+  section.gallery figure.gallery-image {
+    width: 30vh;
   }
   section.gallery .x-gallery-image-row {
     display: flex;

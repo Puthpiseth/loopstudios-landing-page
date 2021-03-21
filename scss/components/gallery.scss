@@ -3,14 +3,13 @@ section.gallery {
   display: flex;
   flex-direction: column;
   height: auto;
-  // position: relative;
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
 
   figure.gallery-image {
     background: linear-gradient(45deg, red, blue); // if image doesn't load
-    width: 300px;
+    width: 350px;
     padding: 10% 0;
     height: auto;
     background-repeat: no-repeat;
@@ -56,34 +55,24 @@ section.gallery {
   }
 }
 
-//  DESTKOP
+//  Small Ipad
 @media screen and (min-width: 768px) {
-  div.h2-and-button {
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    &.h2 {
-      margin-right: 10%;
-    }
-    // &.button.see-all-button {
-
-    // }
-  }
   section.gallery {
-    .gallery-image figcaption {
-      margin-top: 47vh;
-      margin-left: 10% !important;
-    }
-    button {
-    }
-    order: 10;
-
     display: flex;
+    width: 100%;
+
+    .gallery-image figcaption {
+      margin-top: 20vh;
+    }
+
+    h2 {
+      margin-right: 60%;
+      font-weight: 300;
+    }
 
     figure.gallery-image {
-      width: 19vw;
-      font-size: 2em;
-
+      width: 15vh;
+      font-size: 0.8em;
       background-size: cover;
 
       &.deep-earth {
@@ -142,6 +131,27 @@ section.gallery {
           ),
           url(../images/desktop/image-fisheye.jpg);
       }
+    }
+    .x-gallery-image-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    // button.see-all-button {
+    //   position: absolute;
+    //   margin-top: -850px;
+    //   margin-right: -490px;
+    // }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.gallery {
+    display: flex;
+    width: 80%;
+
+    figure.gallery-image {
+      width: 30vh;
     }
     .x-gallery-image-row {
       display: flex;

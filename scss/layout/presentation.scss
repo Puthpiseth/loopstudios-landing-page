@@ -15,12 +15,14 @@ section.presentation {
         // justify-content: center;
     }
     div.presentation-text {
-        width: 70vw;
+        width: 75vw;
         h2 {
             // font-family: $alata;
             // font-family: $josefin-sans;
             font-weight: 300;
             color: $black;
+            letter-spacing: 0.05em;
+            font-size: 2em;
         }
         p {
             // font-family: $josefin-sans;

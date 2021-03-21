@@ -1,5 +1,6 @@
 @import "../base/index";
 footer {
+    font-weight: 600;
     // text-align: center;
     text-align: center;
     background-color: $black;
@@ -30,7 +31,7 @@ footer {
         color: $very-dark-gray;
         // font-family: $alata;
         font-family: $josefin-sans;
-        font-weight: 400;
+        // font-weight: 400;
     }
     .social-media-container {
         flex-direction: row;

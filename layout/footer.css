@@ -1,4 +1,5 @@
 footer {
+  font-weight: 600;
   text-align: center;
   background-color: black;
   color: white;
@@ -26,7 +27,6 @@ footer ul li:first-child {
 footer p.copyright {
   color: dimgray;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
 }
 footer .social-media-container {
   flex-direction: row;

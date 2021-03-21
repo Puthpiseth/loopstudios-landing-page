@@ -49,7 +49,24 @@ section.gallery h2 {
   font-weight: 300;
   letter-spacing: 0.2em;
 }
-section.gallery a {
+section.gallery.from-up-above {
+  background-image: url(../images/mobile/image-from-above.jpg);
+}
+section.gallery.pocket-borealis {
+  background-image: url(../images/mobile/image-pocket-borealis.jpg);
+}
+section.gallery.the-curiosity {
+  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+section.gallery.make-it-fisheye {
+  background-image: url(../images/mobile/image-fisheye.jpg);
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
   text-decoration: none;
 }
 

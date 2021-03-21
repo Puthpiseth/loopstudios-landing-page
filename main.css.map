@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["scss/main.scss"],"names":[],"mappings":"AACA;EAEI;EAGA;;;AAwBJ;EACI","file":"main.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["scss/main.scss"],"names":[],"mappings":"AACA;EAEI;EAGA","file":"main.css"}
+>>>>>>> Development

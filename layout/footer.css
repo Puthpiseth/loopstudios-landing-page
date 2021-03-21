@@ -32,14 +32,27 @@ footer .social-media-container {
   flex-direction: row;
   width: 80vw;
 }
-footer .social-media-icon {
+
+p.copyright {
+  color: dimgray;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.social-media-container {
+  flex-direction: row;
+  width: 80vw;
+}
+
+.social-media-icon {
   margin: 0% 1% 0% 1%;
 }
-footer a {
+
+a {
   text-decoration: none;
   color: white;
 }
-footer a:hover {
+a:hover {
   text-decoration: underline;
   text-underline-offset: 0.4em;
   text-decoration-thickness: 0.1em;

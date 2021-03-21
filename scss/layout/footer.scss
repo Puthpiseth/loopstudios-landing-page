@@ -37,18 +37,32 @@ footer {
         flex-direction: row;
         width: 80vw;
     }
-    .social-media-icon {
-        margin: 0% 1% 0% 1%;
-    }
-    a {
-        // waiting for P's code
-        text-decoration: none;
-        color: $white;
-        &:hover {
-            text-decoration: underline;
-            text-underline-offset: 0.4em;
-            text-decoration-thickness: .1em;
-        }
+}
+
+p.copyright {
+    color: $very-dark-gray;
+    // font-family: $alata;
+    font-family: $josefin-sans;
+    font-weight: 400;
+}
+
+.social-media-container {
+    flex-direction: row;
+    width: 80vw;
+}
+
+.social-media-icon {
+    margin: 0% 1% 0% 1%;
+}
+
+a {
+    // waiting for P's code
+    text-decoration: none;
+    color: $white;
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.4em;
+        text-decoration-thickness: 0.1em;
     }
     .attribution {
         // text-align: center;
@@ -57,7 +71,7 @@ footer {
     }
 }
 
-//  DESTKOP 
+//  DESTKOP
 @media screen and (min-width: 900px) {
     footer {
         display: flex;

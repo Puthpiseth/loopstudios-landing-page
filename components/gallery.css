@@ -83,13 +83,22 @@ a {
     order: 10;
     display: flex;
   }
+  section.gallery figure {
+    margin-block-start: 2em;
+    margin-block-end: 1%;
+    margin-inline-start: 2em;
+    margin-inline-end: 1%;
+  }
   section.gallery .gallery-image figcaption {
     margin-top: 47vh;
     margin-left: 10% !important;
+    font-weight: 300;
   }
   section.gallery figure.gallery-image {
-    width: 19vw;
+    width: 18vw;
+    height: auto;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   section.gallery figure.gallery-image.deep-earth {
     background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/desktop/image-deep-earth.jpg);

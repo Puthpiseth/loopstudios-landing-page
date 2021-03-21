@@ -21,28 +21,28 @@ section.gallery figure.gallery-image figcaption {
   margin-left: 5%;
 }
 section.gallery figure.gallery-image.deep-earth {
-  background-image: url(/images/mobile/image-deep-earth.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-deep-earth.jpg);
 }
 section.gallery figure.gallery-image.night-arcade {
-  background-image: url(/images/mobile/image-night-arcade.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-night-arcade.jpg);
 }
 section.gallery figure.gallery-image.soccer-team {
-  background-image: url(/images/mobile/image-soccer-team.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-soccer-team.jpg);
 }
 section.gallery figure.gallery-image.the-grid {
-  background-image: url(/images/mobile/image-grid.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-grid.jpg);
 }
 section.gallery figure.gallery-image.from-up-above {
-  background-image: url(/images/mobile/image-from-above.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-from-above.jpg);
 }
 section.gallery figure.gallery-image.pocket-borealis {
-  background-image: url(/images/mobile/image-pocket-borealis.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-pocket-borealis.jpg);
 }
 section.gallery figure.gallery-image.the-curiosity {
-  background-image: url(/images/mobile/image-curiosity.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-curiosity.jpg);
 }
 section.gallery figure.gallery-image.make-it-fisheye {
-  background-image: url(/images/mobile/image-fisheye.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(/images/mobile/image-fisheye.jpg);
 }
 section.gallery h2 {
   text-align: center;

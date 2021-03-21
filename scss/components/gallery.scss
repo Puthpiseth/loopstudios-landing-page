@@ -66,28 +66,28 @@ section.gallery {
         //     }
         // }
         &.deep-earth {
-            background-image: url(/images/mobile/image-deep-earth.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-deep-earth.jpg);
         }
         &.night-arcade {
-            background-image: url(/images/mobile/image-night-arcade.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-night-arcade.jpg);
         }
         &.soccer-team {
-            background-image: url(/images/mobile/image-soccer-team.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-soccer-team.jpg);
         }
         &.the-grid {
-            background-image: url(/images/mobile/image-grid.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-grid.jpg);
         }
         &.from-up-above {
-            background-image: url(/images/mobile/image-from-above.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-from-above.jpg);
         }
         &.pocket-borealis {
-            background-image: url(/images/mobile/image-pocket-borealis.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-pocket-borealis.jpg);
         }
         &.the-curiosity {
-            background-image: url(/images/mobile/image-curiosity.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-curiosity.jpg);
         }
         &.make-it-fisheye {
-            background-image: url(/images/mobile/image-fisheye.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, .5)), url(/images/mobile/image-fisheye.jpg);
         }
     }
     h2 {

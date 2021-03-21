@@ -1,5 +1,4 @@
 section.gallery {
-  display: flex;
   flex-direction: column;
   height: auto;
   position: relative;
@@ -72,8 +71,7 @@ a {
 
 @media screen and (min-width: 900px) {
   div.h2-and-button {
-    width: 90vw;
-    display: flex;
+    width: 76vw;
     flex-direction: row;
   }
   div.h2-and-button.h2 {
@@ -82,6 +80,9 @@ a {
   section.gallery {
     order: 10;
     display: flex;
+  }
+  section.gallery h2 {
+    display: inline-flex;
   }
   section.gallery figure {
     margin-block-start: 2em;
@@ -93,6 +94,9 @@ a {
     margin-top: 47vh;
     margin-left: 10% !important;
     font-weight: 300;
+  }
+  section.gallery button {
+    right: 0;
   }
   section.gallery figure.gallery-image {
     width: 18vw;

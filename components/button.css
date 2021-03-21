@@ -1,5 +1,5 @@
-section.gallery .see-all-button {
-  order: 10;
+section.gallery .see-all-button-desktop,
+section.gallery .see-all-button-mobile {
   margin-top: 2%;
   border: 2px solid black;
   padding: 2.5% 6%;
@@ -9,17 +9,23 @@ section.gallery .see-all-button {
   font-weight: 600;
   letter-spacing: 0.2em;
   cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  padding: 1% 3% 1% 3%;
 }
-section.gallery .see-all-button:hover {
+section.gallery .see-all-button-desktop:hover,
+section.gallery .see-all-button-mobile:hover {
   background-color: black;
   color: white;
 }
-@media screen and (min-width: 900px) {
-  section.gallery .see-all-button {
-    order: 0;
-    font-size: 1em;
-    letter-spacing: 0.3em;
-    padding: 1% 3% 1% 3%;
+section.gallery .see-all-button-desktop {
+  position: absolute;
+  margin-top: 0;
+  right: 10%;
+}
+@media screen and (min-width: 768px) {
+  section.gallery .see-all-button-desktop {
+    display: none;
   }
 }
 

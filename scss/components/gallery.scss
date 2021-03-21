@@ -1,7 +1,11 @@
 @import "../base/index.scss";
 section.gallery {
     div.h2-and-button {
+        // position: relative;
         button {
+            // position: absolute;
+            // left: 0;
+            // right: 0;
             // font-weight: 300;  
             // background-color: red;
             // color: aqua;
@@ -11,7 +15,7 @@ section.gallery {
             // display: inline;
         }
     }
-    display: flex;
+    // display: flex;
     flex-direction: column;
     // color: $black;
     // text-align: center;
@@ -145,8 +149,8 @@ a {
     div.h2-and-button {
         // justify-content: center;
         // align-content: center;
-        width: 90vw;
-        display: flex;
+        width: 76vw;
+        // display: flex;
         flex-direction: row;
         &.h2 {
             margin-right: 10%;
@@ -157,14 +161,19 @@ a {
             // color: aquamarine;
             // text-align: left;
         }
-        &.button.see-all-button {
+        &.button.see-all-button-desktop {
             // order: 200;
             // order: -1;
-            // justify-content: right;
+            // justify-content: flex-end;
             // display: inline;
         }
     }
     section.gallery {
+        // position: relative;
+        h2 {
+            display: inline-flex;
+            // text-align: left;
+        }
         // flex-direction: row;
         figure {
             margin-block-start: 2em;
@@ -180,6 +189,9 @@ a {
             font-weight: 300;
         }
         button {
+            // margin-left: 50%;
+            // position: absolute;
+            right: 0;
             // order: 200 !important;
         }
         order: 10;
@@ -239,5 +251,6 @@ a {
             // width: 100vw;
             // background-color: brown;
         }
+        // width: 100%;
     }
 }

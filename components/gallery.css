@@ -89,7 +89,6 @@ a {
   }
   section.gallery figure.gallery-image {
     width: 19vw;
-    font-size: 2em;
     background-size: cover;
   }
   section.gallery figure.gallery-image.deep-earth {

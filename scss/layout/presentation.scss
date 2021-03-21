@@ -7,6 +7,7 @@ section.presentation {
     text-align: center;
     width: 100vw;
     align-items: center;
+    // margin-top: 20%;
     // justify-self: center;
     // align-content: center;
     img {
@@ -17,6 +18,7 @@ section.presentation {
     div.presentation-text {
         width: 70vw;
         h2 {
+            font-size: 2em;
             // font-family: $alata;
             // font-family: $josefin-sans;
             font-weight: 300;
@@ -33,6 +35,8 @@ section.presentation {
 
 @media screen and (min-width: 768px) {
     section.presentation {
+        // margin-top: 15%;
+        margin-bottom: 25%;
         img {
             width: 60vw;
         }

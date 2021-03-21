@@ -1,5 +1,4 @@
 section.presentation {
-  margin-bottom: 15%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -31,9 +30,6 @@ section.presentation div.presentation-text p {
   section.presentation img {
     width: 60vw;
   }
-  section.presentation h2 {
-    font-size: 1.5em;
-  }
   section.presentation div.presentation-text {
     background-color: white;
     margin: 17% 0% 0% 50%;
@@ -46,12 +42,13 @@ section.presentation div.presentation-text p {
     font-weight: 300;
     color: black;
     letter-spacing: 0.05em;
-    font-size: 2em;
+    font-size: 1.8em;
   }
   section.presentation div.presentation-text p {
     width: 100%;
     color: dimgray;
     letter-spacing: 0.2em;
+    font-size: 90%;
   }
 }
 

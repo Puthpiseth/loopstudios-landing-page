@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="layout/presentation.css">
     <link rel="stylesheet" href="components/gallery.css">
     <link rel="stylesheet" href="components/button.css">
-
     <link rel="stylesheet" href="layout/footer.css">
+    <link rel="stylesheet" href="layout/header.css">
 
 
     <title>Frontend Mentor | Loopstudios landing page</title>
@@ -23,43 +23,68 @@
 
 <body>
     <header>
-        <div class="navbar">
-            <div class="navbar__wrapper">
-                <img class="logo navbar__logo" src="images/logo.svg" alt="Loopstudios logo">
-
-                <img class="navbar__menu-icon" src="images/icon-hamburger.svg" alt="Menu icon">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Loopstudios logo">
+                </div>
 
                 <nav>
-                    <ul class="header-menu">
-                        <li class="header-menu__item"><a class="header-menu__link" href="#" title="About">About</a></li>
-                        <li class="header-menu__item"><a class="header-menu__link" href="#" title="Careers">Careers</a></li>
-                        <li class="header-menu__item"><a class="header-menu__link" href="#" title="Events">Events</a></li>
-                        <li class="header-menu__item"><a class="header-menu__link" href="#" title="Products">Products</a></li>
-                        <li class="header-menu__item"><a class="header-menu__link" href="#" title="Support">Support</a></li>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
+            
+                <div class="toggle">
+                    <div class="icon-hamburger">
+                        <img src="images/icon-hamburger.svg" width="24" height="16" alt="icon-hamburger">
+                    </div>
 
-        <div class="title-wrapper">
-            <h1 class="title">Immersive experiences that deliver</h1>
-        </div>
+                    <div class="icon-close">
+                        <img src="images/icon-close.svg" width="25" height="25" alt="icon-close">
+                    </div>
+                </div>
+            </div>
+
+        
+            <div class="title-wrapper">
+                <h1 class="title">Immersive <br>experiences <br>that deliver</h1>
+            </div>
+        
     </header>
 
+    <!-- Mobile Container -->
+        <!-- <section id="mobile-container">
+            <div class="sub-mobile-container">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Loopstudios logo">
+                </div>
 
-    <nav>
-        <ul>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
-        </ul>
-    </nav>
-    <p>
-        Immersive experiences that deliver
-        <!-- <img class="" src="images/mobile/image-hero.jpg" alt=""> -->
-    </p>
+                <nav>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+            
+                <div class="toggle">
+                    <div class="icon-hamburger">
+                        <img src="images/icon-hamburger.svg" width="27" height="18" alt="icon-hamburger">
+                    </div>
+
+                    <div class="icon-close">
+                        <img src="images/icon-close.svg" width="25" height="25" alt="icon-close">
+                    </div>
+                </div>
+            </div>        
+        </section> -->
+
     <div class="presentation-and-gallery-container">
 
 
@@ -68,7 +93,7 @@
                 <picture>
                     <source srcset="images/desktop/image-interactive.jpg" media="(min-width: 900px)">
 
-                    <img class="" src="images/mobile/image-interactive.jpg" alt="">
+                    <img src="images/mobile/image-interactive.jpg" alt="">
 
                 </picture>
             </figure>

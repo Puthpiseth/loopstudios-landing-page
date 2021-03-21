@@ -1,0 +1,162 @@
+@import "../base/index.scss";
+
+// mobile layout
+
+header {
+  height: 100vh;
+  background-image: url("/images/mobile/image-hero.jpg") no-repeat;
+  background-color: $black;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 200px;
+
+  .logo img {
+    width: 10rem;
+    margin-right: 120px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .icon-hamburger img {
+    margin-right: 15%;
+    cursor: pointer;
+  }
+
+  .icon-close {
+    display: none;
+  }
+}
+
+h1 {
+  color: $white;
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 30px 30px;
+}
+
+.title-wrapper {
+  border: 1px solid $white;
+  width: 87%;
+  margin: auto;
+}
+
+// Small Ipad
+@media screen and (min-width: 768px) {
+  header {
+    background-image: url("/images/desktop/image-hero.jpg") no-repeat;
+    background-size: cover;
+    height: 60vh;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-bottom: 85px;
+
+      .logo img {
+        width: 8rem;
+        margin-right: 30px;
+      }
+
+      .icon-hamburger {
+        display: none;
+      }
+
+      nav {
+        display: block;
+      }
+
+      nav {
+        ul {
+          display: flex;
+          flex-direction: row;
+        }
+
+        ul li {
+          text-decoration: none;
+          font-size: 80%;
+          list-style: none;
+          padding-right: 8%;
+        }
+
+        li a {
+          text-decoration: none;
+          color: white;
+        }
+
+        li a:hover {
+          text-decoration: underline;
+          text-underline-offset: 0.4em;
+          text-decoration-thickness: 0.1em;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-left: 4%;
+    }
+
+    .title-wrapper {
+      width: 38%;
+      margin-left: 7%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    height: 55vh;
+    .container {
+      .logo img {
+        width: 12rem;
+      }
+    }
+    h1 {
+      font-size: 2.8rem;
+    }
+
+    .title-wrapper {
+      width: 39%;
+      margin-left: 9%;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    height: 60vh;
+    .container {
+      .logo img {
+        width: 12rem;
+        margin-right: 300px;
+      }
+
+      nav {
+        ul li {
+          font-size: 100%;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 4.2rem;
+    }
+
+    .title-wrapper {
+      width: 43%;
+      margin-left: 7%;
+    }
+  }
+}

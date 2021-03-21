@@ -1,14 +1,12 @@
 @import "../base/index.scss";
 section.presentation {
-  // border: 1px solid $black;
   background-color: $white;
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 100vw;
   align-items: center;
-  // justify-self: center;
-  // align-content: center;
+
   img {
     width: 88vw;
     height: auto;
@@ -53,42 +51,3 @@ section.presentation {
     }
   }
 }
-
-// @media screen and (min-width: 900px) {
-//   section.presentation {
-//     display: flex;
-//     flex-direction: row;
-//     // background-color: khaki;
-//     source,
-//     img {
-//       // height: 90%;
-//       width: 60vw;
-//       height: auto;
-//       // left: 10%;
-//       // right: 10%;
-//       margin-left: 10%;
-//     }
-//     h2 {
-//       width: 70vw;
-//       // font-weight: 300;
-//       // background-color: khaki;
-//       font-size: 3em;
-//       // height: ;
-//     }
-//     div.presentation-text {
-//       // background-color: lightcoral;
-//       background-color: $white;
-//       // bottom: 50%;
-//       margin-top: 15%;
-//       padding: 10% 5% 10% 5%;
-//       text-align: left;
-//       position: absolute;
-//       right: 7%;
-//       width: 30vw;
-//       //   width: 50%;
-//     }
-//     p {
-//       width: 100%;
-//     }
-//   }
-// }

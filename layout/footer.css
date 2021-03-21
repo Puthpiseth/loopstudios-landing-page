@@ -1,4 +1,5 @@
 footer {
+  font-weight: 600;
   text-align: center;
   background-color: black;
   color: white;
@@ -15,6 +16,7 @@ footer p.business-name {
 }
 footer ul {
   list-style: none;
+  padding-left: 0%;
 }
 footer ul li {
   margin: 20% 0% 3% 0%;
@@ -25,25 +27,36 @@ footer ul li:first-child {
 footer p.copyright {
   color: dimgray;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
 }
 footer .social-media-container {
   flex-direction: row;
   width: 80vw;
 }
-footer .social-media-icon {
+
+p.copyright {
+  color: dimgray;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.social-media-container {
+  flex-direction: row;
+  width: 80vw;
+}
+
+.social-media-icon {
   margin: 0% 1% 0% 1%;
 }
-footer a {
+
+a {
   text-decoration: none;
   color: white;
 }
-footer a:hover {
+a:hover {
   text-decoration: underline;
   text-underline-offset: 0.4em;
   text-decoration-thickness: 0.1em;
 }
-
 @media screen and (min-width: 900px) {
   footer {
     display: flex;

@@ -1,101 +1,120 @@
 @import "../base/index";
 footer {
-  // text-align: center;
-  text-align: center;
-  background-color: $black;
-  color: $white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  p.business-name {
-    font-weight: bold;
-    font-size: 125%;
-  }
-  ul {
-    list-style: none;
-    // padding-left: 0%;
-    // margin-left: 0%;
-  }
-  ul li {
-    margin: 20% 0% 3% 0%;
-    &:first-child {
-      margin-top: 0%;
-      // transition: 1s;
+    font-weight: 600;
+    // text-align: center;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    p.business-name {
+        font-weight: bold;
+        font-size: 125%;
     }
-  }
-  p.copyright {
+    ul {
+        list-style: none;
+        padding-left: 0%;
+        // margin-left: 0%;
+    }
+    ul li {
+        margin: 20% 0% 3% 0%;
+        &:first-child {
+            margin-top: 0%;
+            // transition: 1s;
+        }
+    }
+    p.copyright {
+        color: $very-dark-gray;
+        // font-family: $alata;
+        font-family: $josefin-sans;
+        // font-weight: 400;
+    }
+    .social-media-container {
+        flex-direction: row;
+        width: 80vw;
+    }
+}
+
+p.copyright {
     color: $very-dark-gray;
     // font-family: $alata;
     font-family: $josefin-sans;
     font-weight: 400;
-  }
-  .social-media-container {
+}
+
+.social-media-container {
     flex-direction: row;
     width: 80vw;
-  }
-  .social-media-icon {
+}
+
+.social-media-icon {
     margin: 0% 1% 0% 1%;
-  }
-  a {
+}
+
+a {
     // waiting for P's code
     text-decoration: none;
     color: $white;
     &:hover {
-      text-decoration: underline;
-      text-underline-offset: 0.4em;
-      text-decoration-thickness: 0.1em;
+        text-decoration: underline;
+        text-underline-offset: 0.4em;
+        text-decoration-thickness: 0.1em;
     }
-  }
+    .attribution {
+        // text-align: center;
+        // margin-bottom: 10%;
+        // margin-top: 10%;
+    }
 }
 
 //  DESTKOP
 @media screen and (min-width: 900px) {
-  footer {
-    display: flex;
-    flex-direction: row;
-    // justify-content: initial;
-    // align-items: initial;
-    ul {
-      li {
-        margin: 0% 4%;
-      }
-      li:first-of-type {
-        margin-left: 0;
-        // padding-left: 0;
-      }
-    }
-    // display: flex;
-    // margin: 0% 5%;
-    .footer-studio-and-navigation-container-deskop {
-      // margin-right: 10%;
-      display: block;
-      text-align: initial;
-      margin-left: 5%;
-      // background-color: rgba(255, 255, 240, 0.596);
-      ul {
+    footer {
         display: flex;
-      }
+        flex-direction: row;
+        // justify-content: initial;
+        // align-items: initial;
+        ul {
+            li {
+                margin: 0% 4%;
+            }
+            li:first-of-type {
+                margin-left: 0;
+                // padding-left: 0;
+            }
+        }
+        // display: flex;
+        // margin: 0% 5%;
+        .footer-studio-and-navigation-container-deskop {
+            // margin-right: 10%;
+            display: block;
+            text-align: initial;
+            margin-left: 5%;
+            // background-color: rgba(255, 255, 240, 0.596);
+            ul {
+                display: flex;
+            }
+        }
+        .footer-social-media-and-copyright-container-deskop {
+            margin-left: 10%;
+            width: 50%;
+            display: block;
+            // background-color: rgba(255, 255, 240, 0.281);
+            margin-right: 5%;
+            .social-media-container {}
+            p.copyright {
+                text-align: right;
+                // text-align: right;
+                // width: 80%;
+                // text-align: initial;
+            }
+        }
     }
-    .footer-social-media-and-copyright-container-deskop {
-      margin-left: 10%;
-      width: 50%;
-      display: block;
-      // background-color: rgba(255, 255, 240, 0.281);
-      margin-right: 5%;
-      .social-media-container {
-      }
-      p.copyright {
-        text-align: right;
-        // text-align: right;
-        // width: 80%;
-        // text-align: initial;
-      }
-    }
-  }
-  // body {
-  // background-color: red;
-  // }
+    // body {
+    // background-color: red;
+    // }
 }

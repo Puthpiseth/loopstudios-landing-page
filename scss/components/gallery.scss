@@ -3,76 +3,142 @@ section.gallery {
   display: flex;
   flex-direction: column;
   height: auto;
+  position: relative;
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+  width: 100%;
+
+  // Image-gallery opacity
+  figure.gallery-image:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 
   figure.gallery-image {
     background: linear-gradient(45deg, red, blue); // if image doesn't load
-    width: 350px;
-    padding: 10% 0;
+    padding: 8% 0%;
+    width: 80vw;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
+
     figcaption {
       color: $white;
       font-size: 1.4em;
-      font-weight: 400;
       margin-left: 5%;
     }
 
     &.deep-earth {
-      background-image: url(../images/mobile/image-deep-earth.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-deep-earth.jpg);
     }
     &.night-arcade {
-      background-image: url(../images/mobile/image-night-arcade.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-night-arcade.jpg);
     }
     &.soccer-team {
-      background-image: url(../images/mobile/image-soccer-team.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-soccer-team.jpg);
     }
     &.the-grid {
-      background-image: url(../images/mobile/image-grid.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-grid.jpg);
     }
     &.from-up-above {
-      background-image: url(../images/mobile/image-from-above.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-from-above.jpg);
     }
     &.pocket-borealis {
-      background-image: url(../images/mobile/image-pocket-borealis.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-pocket-borealis.jpg);
     }
     &.the-curiosity {
-      background-image: url(../images/mobile/image-curiosity.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-curiosity.jpg);
     }
     &.make-it-fisheye {
-      background-image: url(../images/mobile/image-fisheye.jpg);
+      background-image: linear-gradient(
+          0.25turn,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0)
+        ),
+        url(../images/mobile/image-fisheye.jpg);
     }
   }
   h2 {
     text-align: center;
+    font-weight: 300;
+    letter-spacing: 0.2em;
   }
-
-  a {
-    text-decoration: none;
+  &.from-up-above {
+    background-image: url(../images/mobile/image-from-above.jpg);
+  }
+  &.pocket-borealis {
+    background-image: url(../images/mobile/image-pocket-borealis.jpg);
+  }
+  &.the-curiosity {
+    background-image: url(../images/mobile/image-curiosity.jpg);
+  }
+  &.make-it-fisheye {
+    background-image: url(../images/mobile/image-fisheye.jpg);
   }
 }
 
-//  Small Ipad
-@media screen and (min-width: 768px) {
-  section.gallery {
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+//  DESTKOP
+@media screen and (min-width: 900px) {
+  div.h2-and-button {
+    width: 90vw;
     display: flex;
-    width: 100%;
-
-    .gallery-image figcaption {
-      margin-top: 20vh;
+    flex-direction: row;
+    &.h2 {
+      margin-right: 10%;
     }
-
-    h2 {
-      margin-right: 60%;
-      font-weight: 300;
+  }
+  section.gallery {
+    .gallery-image figcaption {
+      margin-top: 47vh;
+      margin-left: 10% !important;
     }
 
     figure.gallery-image {
-      width: 15vh;
-      font-size: 0.8em;
+      width: 19vw;
       background-size: cover;
 
       &.deep-earth {
@@ -131,27 +197,6 @@ section.gallery {
           ),
           url(../images/desktop/image-fisheye.jpg);
       }
-    }
-    .x-gallery-image-row {
-      display: flex;
-      flex-direction: row;
-    }
-
-    // button.see-all-button {
-    //   position: absolute;
-    //   margin-top: -850px;
-    //   margin-right: -490px;
-    // }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  section.gallery {
-    display: flex;
-    width: 80%;
-
-    figure.gallery-image {
-      width: 30vh;
     }
     .x-gallery-image-row {
       display: flex;

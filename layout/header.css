@@ -52,7 +52,6 @@ h1 {
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: cover;
     height: 60vh;
-    padding-top: 25px;
   }
   header .container {
     display: flex;

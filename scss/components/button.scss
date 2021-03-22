@@ -1,28 +1,29 @@
 @import "../base/index.scss";
 section.gallery {
-  .see-all-button {
-    order: 10;
-    margin-top: 2%;
-    // order: 200 !important;
-    border: 2px solid $black;
-    // height: 35%;
-    // width: 30%;
-    padding: 2.5% 6%;
-    background-color: $white;
-    border-radius: 0%;
-    font-family: $josefin-sans;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    cursor: pointer;
-    &:hover {
-      background-color: $black;
-      color: $white;
+    .see-all-button {
+        order: 10;
+        margin-top: 2%;
+        // order: 200 !important;
+        border: 2px solid $black;
+        // height: 35%;
+        // width: 30%;
+        padding: 2.5% 6%;
+        background-color: $white;
+        border-radius: 0%;
+        font-family: $josefin-sans;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        cursor: pointer;
+        &:hover {
+            background-color: $black;
+            color: $white;
+        }
+        @media screen and (min-width: 900px) {
+            order: 0;
+            // width: ;
+            font-size: 1em;
+            letter-spacing: 0.3em;
+            padding: 1% 3% 1% 3%;
+        }
     }
-    @media screen and (min-width: 900px) {
-      // width: ;
-      font-size: 1em;
-      letter-spacing: 0.3em;
-      padding: 1% 3% 1% 3%;
-    }
-  }
 }

@@ -1,13 +1,15 @@
 @import "../base/index.scss";
-
 // mobile layout
+body {
+  width: 100%;
+}
 
 header {
   height: 100vh;
-  background-image: url("/images/mobile/image-hero.jpg") no-repeat;
-  background-color: $black;
+  background-image: url(../images/mobile/image-hero.jpg);
   padding-top: 50px;
   margin-bottom: 100px;
+  background-size: cover;
 }
 
 .container {
@@ -21,16 +23,13 @@ header {
     width: 10rem;
     margin-right: 120px;
   }
-
   nav {
     display: none;
   }
-
   .icon-hamburger img {
     margin-right: 15%;
     cursor: pointer;
   }
-
   .icon-close {
     display: none;
   }
@@ -54,7 +53,7 @@ h1 {
 // Small Ipad
 @media screen and (min-width: 768px) {
   header {
-    background-image: url("/images/desktop/image-hero.jpg") no-repeat;
+    background-image: url(../images/desktop/image-hero.jpg);
     background-size: cover;
     height: 60vh;
 
@@ -94,7 +93,6 @@ h1 {
           text-decoration: none;
           color: white;
         }
-
         li a:hover {
           text-decoration: underline;
           text-underline-offset: 0.4em;
@@ -102,12 +100,10 @@ h1 {
         }
       }
     }
-
     h1 {
       font-size: 2rem;
       margin-left: 4%;
     }
-
     .title-wrapper {
       width: 38%;
       margin-left: 7%;
@@ -115,18 +111,25 @@ h1 {
   }
 }
 
+// Ipad Pro
 @media screen and (min-width: 1024px) {
   header {
     height: 55vh;
+
     .container {
       .logo img {
         width: 12rem;
+      }
+
+      nav {
+        ul li {
+          margin-right: 9%;
+        }
       }
     }
     h1 {
       font-size: 2.8rem;
     }
-
     .title-wrapper {
       width: 39%;
       margin-left: 9%;
@@ -134,9 +137,11 @@ h1 {
   }
 }
 
+// Desktop
 @media screen and (min-width: 1440px) {
   header {
     height: 60vh;
+
     .container {
       .logo img {
         width: 12rem;

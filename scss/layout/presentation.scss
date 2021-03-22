@@ -1,4 +1,5 @@
 @import "../base/index.scss";
+
 section.presentation {
   background-color: $white;
   display: flex;
@@ -10,19 +11,15 @@ section.presentation {
   img {
     width: 88vw;
     height: auto;
-    // justify-content: center;
   }
   div.presentation-text {
     width: 70vw;
     h2 {
-      // font-family: $alata;
-      // font-family: $josefin-sans;
+      font-size: 2em;
       font-weight: 300;
       color: $black;
     }
     p {
-      // font-family: $josefin-sans;
-      // font-weight: 300;
       color: $very-dark-gray;
       letter-spacing: 0.2em;
     }
@@ -31,23 +28,30 @@ section.presentation {
 
 @media screen and (min-width: 768px) {
   section.presentation {
+    margin-bottom: 10%;
     img {
-      width: 60vw;
+      width: 70vw;
     }
-    h2 {
-      font-size: 1.5em;
-    }
+
     div.presentation-text {
       background-color: $white;
-      margin: 17% 0% 0% 50%;
-      padding: 5% 5% 5% 5%;
+      margin: 20% 0% 0% 50%;
+      padding: 5% 7% 5% 5%;
       text-align: left;
       position: absolute;
       width: 35vw;
-    }
-    p {
-      width: 100%;
-      font-size: 8px;
+      h2 {
+        font-weight: 300;
+        color: $black;
+        letter-spacing: 0.05em;
+        font-size: 1.8em;
+      }
+      p {
+        width: 100%;
+        color: $very-dark-gray;
+        letter-spacing: 0.2em;
+        font-size: 90%;
+      }
     }
   }
 }

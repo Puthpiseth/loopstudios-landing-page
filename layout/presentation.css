@@ -1,55 +1,18 @@
-section.presentation {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100vw;
-  align-items: center;
-}
-section.presentation img {
-  width: 88vw;
-  height: auto;
-}
-section.presentation div.presentation-text {
-  width: 70vw;
-}
-section.presentation div.presentation-text h2 {
-  font-size: 2em;
-  font-weight: 300;
-  color: black;
-}
-section.presentation div.presentation-text p {
-  color: dimgray;
-  letter-spacing: 0.2em;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import "mixins";
+ *   |         ^^^^^^^^
+ *   '
+ *   scss/base/index.scss 2:9           @import
+ *   scss/layout/presentation.scss 1:9  root stylesheet */
 
-@media screen and (min-width: 768px) {
-  section.presentation {
-    margin-bottom: 25%;
-  }
-  section.presentation img {
-    width: 60vw;
-  }
-  section.presentation div.presentation-text {
-    background-color: white;
-    margin: 17% 0% 0% 50%;
-    padding: 5% 5% 5% 5%;
-    text-align: left;
-    position: absolute;
-    width: 35vw;
-  }
-  section.presentation div.presentation-text h2 {
-    font-weight: 300;
-    color: black;
-    letter-spacing: 0.05em;
-    font-size: 1.8em;
-  }
-  section.presentation div.presentation-text p {
-    width: 100%;
-    color: dimgray;
-    letter-spacing: 0.2em;
-    font-size: 90%;
-  }
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"mixins\";\a   \2502          ^^^^^^^^\a   \2575 \a   scss/base/index.scss 2:9           @import\a   scss/layout/presentation.scss 1:9  root stylesheet";
 }
-
-/*# sourceMappingURL=presentation.css.map */

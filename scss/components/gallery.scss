@@ -3,13 +3,13 @@ section.gallery {
   display: flex;
   flex-direction: column;
   height: auto;
-  position: relative;
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
   width: 100%;
 
   // Image-gallery opacity
+
   figure.gallery-image:hover {
     opacity: 0.8;
     cursor: pointer;
@@ -124,22 +124,31 @@ a {
 //  DESTKOP
 @media screen and (min-width: 900px) {
   div.h2-and-button {
-    width: 90vw;
-    display: flex;
+    width: 76vw;
     flex-direction: row;
-    &.h2 {
-      margin-right: 10%;
-    }
   }
+
   section.gallery {
+    width: 100%;
+
+    h2 {
+      display: inline-flex;
+    }
+    figure {
+      margin-block-start: 2em;
+      margin-block-end: 1%;
+      margin-inline-start: 2em;
+      margin-inline-end: 1%;
+    }
     .gallery-image figcaption {
       margin-top: 47vh;
-      margin-left: 10% !important;
+      font-weight: 300;
     }
 
     figure.gallery-image {
       width: 19vw;
       background-size: cover;
+      background-repeat: no-repeat;
 
       &.deep-earth {
         background-image: linear-gradient(

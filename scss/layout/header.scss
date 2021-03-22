@@ -18,6 +18,7 @@ header {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 200px;
+
   .logo img {
     width: 10rem;
     margin-right: 120px;
@@ -55,32 +56,39 @@ h1 {
     background-image: url(../images/desktop/image-hero.jpg);
     background-size: cover;
     height: 60vh;
+
     .container {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       padding-bottom: 85px;
+
       .logo img {
         width: 8rem;
         margin-right: 30px;
       }
+
       .icon-hamburger {
         display: none;
       }
+
       nav {
         display: block;
       }
+
       nav {
         ul {
           display: flex;
           flex-direction: row;
         }
+
         ul li {
           text-decoration: none;
           font-size: 80%;
           list-style: none;
           padding-right: 8%;
         }
+
         li a {
           text-decoration: none;
           color: white;
@@ -107,9 +115,16 @@ h1 {
 @media screen and (min-width: 1024px) {
   header {
     height: 55vh;
+
     .container {
       .logo img {
         width: 12rem;
+      }
+
+      nav {
+        ul li {
+          margin-right: 9%;
+        }
       }
     }
     h1 {
@@ -126,20 +141,24 @@ h1 {
 @media screen and (min-width: 1440px) {
   header {
     height: 60vh;
+
     .container {
       .logo img {
         width: 12rem;
         margin-right: 300px;
       }
+
       nav {
         ul li {
           font-size: 100%;
         }
       }
     }
+
     h1 {
       font-size: 4.2rem;
     }
+
     .title-wrapper {
       width: 43%;
       margin-left: 7%;

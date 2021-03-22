@@ -1,126 +1,18 @@
-section.gallery {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10%;
-  width: 100%;
-}
-section.gallery figure.gallery-image:hover {
-  opacity: 0.8;
-  cursor: pointer;
-}
-section.gallery figure.gallery-image {
-  background: linear-gradient(45deg, red, blue);
-  padding: 8% 0%;
-  width: 80vw;
-  height: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-section.gallery figure.gallery-image figcaption {
-  color: white;
-  font-size: 1.4em;
-  margin-left: 5%;
-}
-section.gallery figure.gallery-image.deep-earth {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-deep-earth.jpg);
-}
-section.gallery figure.gallery-image.night-arcade {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-night-arcade.jpg);
-}
-section.gallery figure.gallery-image.soccer-team {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-soccer-team.jpg);
-}
-section.gallery figure.gallery-image.the-grid {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-grid.jpg);
-}
-section.gallery figure.gallery-image.from-up-above {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-from-above.jpg);
-}
-section.gallery figure.gallery-image.pocket-borealis {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-pocket-borealis.jpg);
-}
-section.gallery figure.gallery-image.the-curiosity {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-curiosity.jpg);
-}
-section.gallery figure.gallery-image.make-it-fisheye {
-  background-image: linear-gradient(0.25turn, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../images/mobile/image-fisheye.jpg);
-}
-section.gallery h2 {
-  text-align: center;
-  font-weight: 300;
-  letter-spacing: 0.2em;
-}
-section.gallery.from-up-above {
-  background-image: url(../images/mobile/image-from-above.jpg);
-}
-section.gallery.pocket-borealis {
-  background-image: url(../images/mobile/image-pocket-borealis.jpg);
-}
-section.gallery.the-curiosity {
-  background-image: url(../images/mobile/image-curiosity.jpg);
-}
-section.gallery.make-it-fisheye {
-  background-image: url(../images/mobile/image-fisheye.jpg);
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 2 | @import "mixins";
+ *   |         ^^^^^^^^
+ *   '
+ *   scss/base/index.scss 2:9          @import
+ *   scss/components/gallery.scss 1:9  root stylesheet */
 
-h2 {
-  text-align: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"mixins\";\a   \2502          ^^^^^^^^\a   \2575 \a   scss/base/index.scss 2:9          @import\a   scss/components/gallery.scss 1:9  root stylesheet";
 }
-
-a {
-  text-decoration: none;
-}
-
-@media screen and (min-width: 900px) {
-  div.h2-and-button {
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-  }
-  div.h2-and-button.h2 {
-    margin-right: 10%;
-  }
-
-  section.gallery .gallery-image figcaption {
-    margin-top: 47vh;
-    margin-left: 10% !important;
-  }
-  section.gallery figure.gallery-image {
-    width: 19vw;
-    background-size: cover;
-  }
-  section.gallery figure.gallery-image.deep-earth {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-deep-earth.jpg);
-  }
-  section.gallery figure.gallery-image.night-arcade {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-night-arcade.jpg);
-  }
-  section.gallery figure.gallery-image.soccer-team {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-soccer-team.jpg);
-  }
-  section.gallery figure.gallery-image.the-grid {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-grid.jpg);
-  }
-  section.gallery figure.gallery-image.from-up-above {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-from-above.jpg);
-  }
-  section.gallery figure.gallery-image.pocket-borealis {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-pocket-borealis.jpg);
-  }
-  section.gallery figure.gallery-image.the-curiosity {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-curiosity.jpg);
-  }
-  section.gallery figure.gallery-image.make-it-fisheye {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5)), url(../images/desktop/image-fisheye.jpg);
-  }
-  section.gallery .x-gallery-image-row {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/*# sourceMappingURL=gallery.css.map */

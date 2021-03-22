@@ -30,7 +30,7 @@ footer p.copyright {
 }
 footer .social-media-container {
   flex-direction: row;
-  width: 80vw;
+  text-align: right;
 }
 
 p.copyright {
@@ -41,7 +41,6 @@ p.copyright {
 
 .social-media-container {
   flex-direction: row;
-  width: 80vw;
 }
 
 .social-media-icon {

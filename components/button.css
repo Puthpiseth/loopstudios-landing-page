@@ -37,5 +37,10 @@ section.gallery .see-all-button-desktop {
     margin-left: 48%;
   }
 }
+@media screen and (min-width: 900px) and (min-width: 1440px) {
+  .see-all-button-desktop {
+    margin-left: 59%;
+  }
+}
 
 /*# sourceMappingURL=button.css.map */

@@ -81,6 +81,9 @@ a:hover {
     display: block;
     margin-right: 5%;
   }
+  footer .footer-social-media-and-copyright-container-deskop .social-media-container {
+    text-align: right;
+  }
   footer .footer-social-media-and-copyright-container-deskop p.copyright {
     text-align: right;
   }

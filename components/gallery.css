@@ -77,7 +77,8 @@ a {
 
 @media screen and (min-width: 900px) {
   div.h2-and-button {
-    width: 76vw;
+    margin-left: 5%;
+    width: 80vw;
     flex-direction: row;
   }
   div.h2-and-button.h2 {

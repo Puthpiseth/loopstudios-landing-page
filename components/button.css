@@ -19,13 +19,22 @@ section.gallery .see-all-button-mobile:hover {
   color: white;
 }
 section.gallery .see-all-button-desktop {
-  position: absolute;
-  margin-top: 0;
-  right: 10%;
+  display: none;
 }
-@media screen and (min-width: 768px) {
-  section.gallery .see-all-button-desktop {
+@media screen and (min-width: 900px) {
+  .see-all-button-desktop {
+    display: inline-flex !important;
+    align-content: flex-end;
+    margin-left: 65%;
+  }
+
+  .see-all-button-mobile {
     display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .see-all-button-desktop {
+    margin-left: 48%;
   }
 }
 

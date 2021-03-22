@@ -1,10 +1,10 @@
 @import "./base/index.scss";
 body {
-    // font-size: 62.5%;
     margin: 0;
+    font: 1em $alata;
+    // font-size: 62.5%;
     // background-color: blue;
     // font: 1em $josefin-sans;
-    font: 1em $alata;
     // background-color: aquamarine;
     // font: 1em $josefin-sans;
     // font-weight: 300;
@@ -26,9 +26,4 @@ h6 {
 
 .presentation-and-gallery-container {
     // @media     
-}
-
-.attribution {
-    text-align: center;
-    // margin-top: 20%;
 }

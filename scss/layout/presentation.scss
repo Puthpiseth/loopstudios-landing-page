@@ -1,58 +1,54 @@
 @import "../base/index.scss";
-
 section.presentation {
-  background-color: $white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  //   width: 100vw;
-  width: 100vw;
-  align-items: center;
-
-  img {
-    width: 88vw;
-    height: auto;
-  }
-  div.presentation-text {
-    width: 70vw;
-    h2 {
-      font-size: 2em;
-      font-weight: 300;
-      color: $black;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    align-items: center;
+    img {
+        width: 88vw;
+        height: auto;
     }
-    p {
-      color: $very-dark-gray;
-      letter-spacing: 0.2em;
+    div.presentation-text {
+        width: 70vw;
+        h2 {
+            font-size: 2em;
+            font-weight: 300;
+            color: $black;
+        }
+        p {
+            color: $very-dark-gray;
+            letter-spacing: 0.2em;
+        }
     }
-  }
 }
 
 @media screen and (min-width: 768px) {
-  section.presentation {
-    margin-bottom: 25%;
-    img {
-      width: 60vw;
+    section.presentation {
+        margin-bottom: 25%;
+        img {
+            width: 60vw;
+        }
+        div.presentation-text {
+            background-color: $white;
+            margin: 17% 0% 0% 50%;
+            padding: 5% 5% 5% 5%;
+            text-align: left;
+            position: absolute;
+            width: 35vw;
+            h2 {
+                font-weight: 300;
+                color: $black;
+                letter-spacing: 0.05em;
+                font-size: 1.8em;
+            }
+            p {
+                width: 100%;
+                color: $very-dark-gray;
+                letter-spacing: 0.2em;
+                font-size: 90%;
+            }
+        }
     }
-
-    div.presentation-text {
-      background-color: $white;
-      margin: 17% 0% 0% 50%;
-      padding: 5% 5% 5% 5%;
-      text-align: left;
-      position: absolute;
-      width: 35vw;
-      h2 {
-        font-weight: 300;
-        color: $black;
-        letter-spacing: 0.05em;
-        font-size: 1.8em;
-      }
-      p {
-        width: 100%;
-        color: $very-dark-gray;
-        letter-spacing: 0.2em;
-        font-size: 90%;
-      }
-    }
-  }
 }

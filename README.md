@@ -11,16 +11,25 @@ A team project of Simplon.co BootCamp using Sass. It is responsive and adaptable
 <p align="center">
     <img src="https://img.shields.io/badge/SASS-pink" />
 
-
 ## Project Link
 
 https://puthpiseth.github.io/loopstudios-landing-page/
 
 ## Application Layout
 
-![](pokedexMarquette.png)
+- Desktop Layout
+
+![](design/desktop-design.jpg)
+
+- Tablet Layout
+
+![](design/Tablet-design.png)
+
+- Mobile Layout
+
+![](design/mobile-design.jpg)
 
 ## Contributing
 
 Puthpiseth TUN GitHub: https://github.com/Puthpiseth
-Vincent Dara KONG GitHub: https://github.com/HassanElgallouchi
+Vincent Dara KONG GitHub: https://github.com/dv-kong

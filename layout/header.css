@@ -1,18 +1,138 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "mixins";
- *   |         ^^^^^^^^
- *   '
- *   scss/base/index.scss 2:9     @import
- *   scss/layout/header.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"mixins\";\a   \2502          ^^^^^^^^\a   \2575 \a   scss/base/index.scss 2:9     @import\a   scss/layout/header.scss 1:9  root stylesheet";
+body {
+  width: 100%;
 }
+
+header {
+  height: 100vh;
+  background-image: url(../images/mobile/image-hero.jpg);
+  padding-top: 50px;
+  margin-bottom: 100px;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 200px;
+}
+.container .logo img {
+  width: 10rem;
+  margin-right: 120px;
+}
+.container nav {
+  display: none;
+}
+.container .icon-hamburger img {
+  margin-right: 15%;
+  cursor: pointer;
+}
+.container .icon-close {
+  display: none;
+}
+
+h1 {
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 30px 30px;
+}
+
+.title-wrapper {
+  border: 1px solid white;
+  width: 87%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-size: cover;
+    height: 60vh;
+  }
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 85px;
+  }
+  header .container .logo img {
+    width: 8rem;
+    margin-right: 30px;
+  }
+  header .container .icon-hamburger {
+    display: none;
+  }
+  header .container nav {
+    display: block;
+  }
+  header .container nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  header .container nav ul li {
+    text-decoration: none;
+    font-size: 80%;
+    list-style: none;
+    padding-right: 8%;
+  }
+  header .container nav li a {
+    text-decoration: none;
+    color: white;
+  }
+  header .container nav li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-thickness: 0.1em;
+  }
+  header h1 {
+    font-size: 2rem;
+    margin-left: 4%;
+  }
+  header .title-wrapper {
+    width: 38%;
+    margin-left: 7%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 55vh;
+  }
+  header .container .logo img {
+    width: 12rem;
+  }
+  header .container nav ul li {
+    margin-right: 9%;
+  }
+  header h1 {
+    font-size: 2.8rem;
+  }
+  header .title-wrapper {
+    width: 39%;
+    margin-left: 9%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    height: 60vh;
+  }
+  header .container .logo img {
+    width: 12rem;
+    margin-right: 300px;
+  }
+  header .container nav ul li {
+    font-size: 100%;
+  }
+  header h1 {
+    font-size: 4.2rem;
+  }
+  header .title-wrapper {
+    width: 43%;
+    margin-left: 7%;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

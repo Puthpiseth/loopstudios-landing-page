@@ -1,18 +1,89 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import "mixins";
- *   |         ^^^^^^^^
- *   '
- *   scss/base/index.scss 2:9     @import
- *   scss/layout/footer.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"mixins\";\a   \2502          ^^^^^^^^\a   \2575 \a   scss/base/index.scss 2:9     @import\a   scss/layout/footer.scss 1:9  root stylesheet";
+footer {
+  font-weight: 600;
+  text-align: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+footer p.business-name {
+  font-weight: bold;
+  font-size: 125%;
+}
+footer ul {
+  list-style: none;
+  padding-left: 0%;
+}
+footer ul li {
+  margin: 20% 0% 3% 0%;
+}
+footer ul li:first-child {
+  margin-top: 0%;
+}
+footer p.copyright {
+  color: dimgray;
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .social-media-container {
+  flex-direction: row;
+  text-align: right;
+}
+
+p.copyright {
+  color: dimgray;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+}
+
+.social-media-container {
+  flex-direction: row;
+}
+
+.social-media-icon {
+  margin: 0% 1% 0% 1%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-thickness: 0.1em;
+}
+@media screen and (min-width: 900px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li {
+    margin: 0% 4%;
+  }
+  footer ul li:first-of-type {
+    margin-left: 0;
+  }
+  footer .footer-studio-and-navigation-container-deskop {
+    display: block;
+    text-align: initial;
+    margin-left: 5%;
+  }
+  footer .footer-studio-and-navigation-container-deskop ul {
+    display: flex;
+  }
+  footer .footer-social-media-and-copyright-container-deskop {
+    margin-left: 10%;
+    width: 50%;
+    display: block;
+    margin-right: 5%;
+  }
+  footer .footer-social-media-and-copyright-container-deskop p.copyright {
+    text-align: right;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

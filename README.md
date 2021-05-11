@@ -1,6 +1,6 @@
 # loopstudios-landing-page
 
-A team project of Simplon.co BootCamp using Sass. It is responsive and adaptable to all types of screen devices.
+A team project of Simplon.co bootcamp using Sass. It is responsive and adaptable to all types of screen devices.
 
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/Puthpiseth/loopstudios-landing-page" />

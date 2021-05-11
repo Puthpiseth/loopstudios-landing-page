@@ -1,197 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="layout/presentation.css">
-    <link rel="stylesheet" href="components/gallery.css">
-    <link rel="stylesheet" href="components/button.css">
-    <link rel="stylesheet" href="layout/footer.css">
-    <link rel="stylesheet" href="layout/header.css">
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="layout/presentation.css" />
+    <link rel="stylesheet" href="components/gallery.css" />
+    <link rel="stylesheet" href="components/button.css" />
+    <link rel="stylesheet" href="layout/footer.css" />
+    <link rel="stylesheet" href="layout/header.css" />
 
     <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
-
-<body>
-
+  <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="images/logo.svg" alt="Loopstudios logo">
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Support</a></li>
-                </ul>
-            </nav>
-
-            <div class="toggle">
-                <div class="icon-hamburger">
-                    <img src="images/icon-hamburger.svg" width="24" height="16" alt="icon-hamburger">
-                </div>
-
-                <div class="icon-close">
-                    <img src="images/icon-close.svg" width="25" height="25" alt="icon-close">
-                </div>
-            </div>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.svg" alt="Loopstudios logo" />
         </div>
 
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </nav>
 
-        <div class="title-wrapper">
-            <h1 class="title">Immersive <br>experiences <br>that deliver</h1>
+        <div class="toggle">
+          <div class="icon-hamburger">
+            <img
+              src="images/icon-hamburger.svg"
+              width="24"
+              height="16"
+              alt="icon-hamburger"
+            />
+          </div>
+
+          <div class="icon-close">
+            <img
+              src="images/icon-close.svg"
+              width="25"
+              height="25"
+              alt="icon-close"
+            />
+          </div>
         </div>
+      </div>
 
+      <div class="title-wrapper">
+        <h1 class="title">Immersive <br />experiences <br />that deliver</h1>
+      </div>
     </header>
 
-    
     <div class="presentation-and-gallery-container">
+      <section class="presentation">
+        <figure>
+          <picture>
+            <source
+              srcset="images/desktop/image-interactive.jpg"
+              media="(min-width: 900px)"
+            />
 
+            <img src="images/mobile/image-interactive.jpg" alt="" />
+          </picture>
+        </figure>
+        <div class="presentation-text">
+          <h2>THE LEADER IN <br />INTERACTIVE VR</h2>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
 
-        <section class="presentation">
-            <figure>
-                <picture>
-                    <source srcset="images/desktop/image-interactive.jpg" media="(min-width: 900px)">
+      <section class="gallery">
+        <!-- <div class="h2-and-button"> -->
 
-                    <img src="images/mobile/image-interactive.jpg" alt="">
+        <h2>OUR CREATIONS</h2>
+        <button class="see-all-button">SEE ALL</button>
 
-                </picture>
+        <!-- </div> -->
+
+        <div class="x-gallery-image-row">
+          <!-- <div class="img-gradient"> -->
+
+          <a href="#">
+            <figure class="gallery-image deep-earth">
+              <figcaption>DEEP<br />EARTH</figcaption>
             </figure>
-            <div class="presentation-text">
-                <h2>
-                    THE LEADER IN <br>INTERACTIVE VR
-                </h2>
-                <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their
-                    brand.
-                </p>
-            </div>
-        </section>
+          </a>
+          <!-- </div> -->
 
-        <section class="gallery">
+          <a href="#">
+            <figure class="gallery-image night-arcade">
+              <figcaption>NIGHT<br />ARCADE</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="gallery-image soccer-team">
+              <figcaption>SOCCER<br />TEAM VR</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="gallery-image the-grid">
+              <figcaption>THE<br />GRID</figcaption>
+            </figure>
+          </a>
+        </div>
 
-            <!-- <div class="h2-and-button"> -->
+        <div class="x-gallery-image-row">
+          <a href="#">
+            <figure class="gallery-image from-up-above">
+              <figcaption>FROM UP<br />ABOVE VR</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="gallery-image pocket-borealis">
+              <figcaption>POCKET<br />BOREALIS</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="gallery-image the-curiosity">
+              <figcaption>THE<br />CURIOSITY</figcaption>
+            </figure>
+          </a>
+          <a href="#">
+            <figure class="gallery-image make-it-fisheye">
+              <figcaption>MAKE IT<br />FISHEYE</figcaption>
+            </figure>
+          </a>
+        </div>
 
-
-            <h2>
-                OUR CREATIONS
-            </h2>
-            <button class="see-all-button">SEE ALL</button>
-
-            <!-- </div> -->
-
-            <div class="x-gallery-image-row">
-
-                <!-- <div class="img-gradient"> -->
-
-                <a href="#">
-                    <figure class="gallery-image deep-earth">
-                        <figcaption>DEEP<br>EARTH</figcaption>
-                    </figure>
-                </a>
-                <!-- </div> -->
-
-                <a href="#">
-                    <figure class="gallery-image night-arcade">
-                        <figcaption>NIGHT<br>ARCADE</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery-image soccer-team">
-                        <figcaption>SOCCER<br>TEAM VR</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery-image the-grid">
-                        <figcaption>THE<br>GRID</figcaption>
-                    </figure>
-                </a>
-            </div>
-
-            <div class="x-gallery-image-row">
-
-
-                <a href="#">
-                    <figure class="gallery-image from-up-above">
-                        <figcaption>FROM UP<br>ABOVE VR</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery-image pocket-borealis">
-                        <figcaption>POCKET<br>BOREALIS</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery-image the-curiosity">
-                        <figcaption>THE<br>CURIOSITY</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="gallery-image make-it-fisheye">
-                        <figcaption>MAKE IT<br>FISHEYE</figcaption>
-                    </figure>
-                </a>
-            </div>
-            <!-- <figure class="gallery-image">
-            <a href="#">
-                <picture>
-                    <source media="(min-width: 900px)" srcset="images/desktop/image-deep-earth.jpg">
-                    <img src="images/mobile/image-night-arcade.jpg" alt="">
-                    <figcaption></figcaption>
-                </picture>
-            </a>
-        </figure> 
-    -->
-
-
-
-            <!-- <button class="see-all-button">SEE ALL</button> -->
-
-        </section>
+        <!-- <button class="see-all-button">SEE ALL</button> -->
+      </section>
     </div>
 
     <footer>
-        <div class="footer-studio-and-navigation-container-deskop">
-            <a href="./index.html">
-                <p class="business-name">loopstudios</p>
-            </a>
-            <ul>
-
-                <li><a href="#">About</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </div>
-        <div class="footer-social-media-and-copyright-container-deskop">
-            <ul class="social-media-container ">
-                <a class="social-media-icon" href="#"><img src="./images/icon-facebook.svg" alt=""></a>
-                <a class="social-media-icon" href="#"><img src="./images/icon-twitter.svg" alt=""></a>
-                <a class="social-media-icon" href="#"><img src="./images/icon-pinterest.svg" alt=""></a>
-                <a class="social-media-icon" href="#"><img src="./images/icon-instagram.svg" alt=""></a>
-            </ul>
-            <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
-
-        </div>
+      <div class="footer-studio-and-navigation-container-deskop">
+        <a href="./index.html">
+          <p class="business-name">loopstudios</p>
+        </a>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-social-media-and-copyright-container-deskop">
+        <ul class="social-media-container">
+          <a class="social-media-icon" href="#"
+            ><img src="./images/icon-facebook.svg" alt=""
+          /></a>
+          <a class="social-media-icon" href="#"
+            ><img src="./images/icon-twitter.svg" alt=""
+          /></a>
+          <a class="social-media-icon" href="#"
+            ><img src="./images/icon-pinterest.svg" alt=""
+          /></a>
+          <a class="social-media-icon" href="#"
+            ><img src="./images/icon-instagram.svg" alt=""
+          /></a>
+        </ul>
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
     </footer>
-
-
-    <!-- <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>Coded by <a href="#">Piseth</a> & <a href="#">dkong</a>.
-    </div> -->
-</body>
-
+  </body>
 </html>
